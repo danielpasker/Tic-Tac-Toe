@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:fitsSystemWindows="true">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:popupTheme="@style/ThemeOverlay.AppCompat.Dark"
+            android:theme="@style/ToolbarStyle" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:id="@+id/text_view_player"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:textSize="20sp" />
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:columnCount="3"
+        android:rowCount="3">
+
+        <Button
+            android:id="@+id/button_00"
+            style="@style/ButtonStyle" />
+
+        <Button
+            android:id="@+id/button_01"
+            style="@style/ButtonStyle" />
+
+        <Button
+            android:id="@+id/button_02"
+            style="@style/ButtonStyle" />
+
+        <Button
+            android:id="@+id/button_10"
+            style="@style/ButtonStyle" />
+
+        <Button
+            android:id="@+id/button_11"
+            style="@style/ButtonStyle" />
+
+        <Button
+            android:id="@+id/button_12"
+            style="@style/ButtonStyle" />
+
+        <Button
+            android:id="@+id/button_20"
+            style="@style/ButtonStyle" />
+
+        <Button
+            android:id="@+id/button_21"
+            style="@style/ButtonStyle" />
+
+        <Button
+            android:id="@+id/button_22"
+            style="@style/ButtonStyle" />
+
+    </GridLayout>
+
+    <Button
+        android:id="@+id/button_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/button_reset" />
+
+</LinearLayout>
